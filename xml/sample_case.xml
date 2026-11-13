@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="case.xsl"?>
+<!DOCTYPE casefile SYSTEM "case.dtd">
+<casefile id="1" difficulty="medium">
+  <title>The Last Toast at Rosewood Manor</title>
+  <victim>Edmund Rosewood (62), retired antiques dealer</victim>
+  <location>Rosewood Manor, the study on the first floor</location>
+  <incident_time>Friday, 9:40 PM</incident_time>
+  <summary>During his anniversary dinner, Edmund Rosewood excused himself to his study for a quiet toast. Minutes later a scream rang through the manor. Edmund was found slumped over his desk beside a half-empty brandy glass. The study window was latched from the inside, and the only door opens onto a hallway. Four people had reasons to be at the manor tonight, and one of them is lying.</summary>
+  <suspects>
+    <suspect id="1">
+      <name>Clara Rosewood</name>
+      <occupation>Niece, art student</occupation>
+      <statement>I was in the attic studio painting from about half past eight. I heard the scream and ran down the stairs. I loved my uncle, even if he had just cut my allowance.</statement>
+      <alibi>Says she was alone in the attic studio from 8:30 PM until the scream. Nobody saw her there.</alibi>
+      <motive>Edmund had cut her allowance and threatened to stop paying her tuition.</motive>
+    </suspect>
+    <suspect id="2">
+      <name>Victor Hale</name>
+      <occupation>Business partner</occupation>
+      <statement>We argued about the sale of the Rosewood collection. I left at 8:45 sharp, drove home and did not come back. I only learned about the death when the police phoned me.</statement>
+      <alibi>Claims he left the manor before 9 PM and was at home when the police called.</alibi>
+      <motive>Edmund suspected Victor of undervaluing items to pocket the difference.</motive>
+    </suspect>
+    <suspect id="3">
+      <name>Mrs. Agnes Pritchard</name>
+      <occupation>Housekeeper</occupation>
+      <statement>I poured Mr. Rosewood his brandy from a fresh bottle at 8:58 and left the tray in the hallway outside his study, as I always do. After that I was in the kitchen with the cook all night.</statement>
+      <alibi>The cook says Mrs. Pritchard was in the kitchen from 9:00 PM onward.</alibi>
+      <motive>Edmund had told her he planned to sell the manor, ending thirty years of service.</motive>
+    </suspect>
+    <suspect id="4">
+      <name>Dr. Julian Marsh</name>
+      <occupation>Family physician</occupation>
+      <statement>I was at my clinic until 9:30, then drove over because Edmund asked me to join the toast. I arrived at 9:35, just as the scream rang out, and I pronounced him dead.</statement>
+      <alibi>Says he was working late at his clinic until 9:30 PM and reached the manor at 9:35 PM.</alibi>
+      <motive>Edmund had recently asked him odd questions about patient records and prescriptions.</motive>
+    </suspect>
+  </suspects>
+  <evidence_list>
+    <evidence id="1" cost="0">
+      <title>Crime scene report</title>
+      <description>Edmund Rosewood was found slumped over his desk at 9:40 PM. A half-empty brandy glass sat beside him. The study window was latched from the inside, and the door opens onto the main hallway.</description>
+      <found_at>Study, first floor</found_at>
+    </evidence>
+    <evidence id="2" cost="10">
+      <title>Toxicology note</title>
+      <description>Cause of death was an overdose of digitoxin, a heart medication, dissolved in the brandy. The dose was large and fast acting. Whoever did this had access to the drug and knew how to dose it.</description>
+      <found_at>Police laboratory</found_at>
+    </evidence>
+    <evidence id="3" cost="10">
+      <title>Front gate camera log</title>
+      <description>8:52 PM: the silver sedan of Victor Hale leaves the estate. 8:55 PM: a dark green car registered to Dr. Julian Marsh enters. No other vehicles are logged before the police arrive.</description>
+      <found_at>Security booth at the front gate</found_at>
+    </evidence>
+    <evidence id="4" cost="10">
+      <title>Kitchen record</title>
+      <description>The cook confirms Mrs. Pritchard poured the brandy at 8:58 PM from a freshly sealed bottle in front of her, then stayed in the kitchen. The tray was left unattended in the hallway for about twenty minutes until Edmund collected it at 9:20 PM.</description>
+      <found_at>Kitchen</found_at>
+    </evidence>
+    <evidence id="5" cost="10">
+      <title>Livestream recording of Clara</title>
+      <description>Clara streamed herself painting in the attic studio from 8:30 PM to 9:45 PM. The video is continuous and timestamped, and her easel is visible the whole time.</description>
+      <found_at>Attic studio and online archive</found_at>
+    </evidence>
+    <evidence id="6" cost="15">
+      <title>Pharmacy records</title>
+      <description>Digitoxin was dispensed three weeks ago on a prescription signed by Dr. Julian Marsh, for a patient who had died two months earlier.</description>
+      <found_at>Village pharmacy</found_at>
+    </evidence>
+    <evidence id="7" cost="20">
+      <title>Final diary entry</title>
+      <description>Found the pharmacy slips for Mrs. Dalton, who died in August. J. signed every one. Told him he has until Monday to explain, or I go to the medical board.</description>
+      <found_at>Study desk drawer</found_at>
+    </evidence>
+  </evidence_list>
+  <solution>
+    <culprit>Dr. Julian Marsh</culprit>
+    <explanation>Dr. Julian Marsh poisoned the brandy with digitoxin, a heart medication he obtained through fraudulent prescriptions. Edmund had discovered the fraud and planned to report it to the medical board. The gate log proves Marsh arrived at 8:55 PM, not 9:35 PM as he claimed, which gave him time to slip the drug into the brandy tray left unattended in the hallway. Clara has a continuous video alibi, Victor left the estate before Marsh arrived, and Mrs. Pritchard poured the brandy from a sealed bottle in front of the cook.</explanation>
+  </solution>
+</casefile>

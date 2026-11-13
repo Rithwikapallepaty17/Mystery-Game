@@ -1,0 +1,31 @@
+<!ELEMENT casefile (title, victim, location, incident_time, summary, suspects, evidence_list, solution?)>
+<!ATTLIST casefile
+  id         CDATA #REQUIRED
+  difficulty (easy | medium | hard) #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT victim (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT incident_time (#PCDATA)>
+<!ELEMENT summary (#PCDATA)>
+
+<!ELEMENT suspects (suspect+)>
+<!ELEMENT suspect (name, occupation, statement, alibi, motive)>
+<!ATTLIST suspect id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT occupation (#PCDATA)>
+<!ELEMENT statement (#PCDATA)>
+<!ELEMENT alibi (#PCDATA)>
+<!ELEMENT motive (#PCDATA)>
+
+<!ELEMENT evidence_list (evidence*)>
+<!ELEMENT evidence (title, description, found_at)>
+<!ATTLIST evidence
+  id   CDATA #REQUIRED
+  cost CDATA #REQUIRED>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT found_at (#PCDATA)>
+
+<!ELEMENT solution (culprit, explanation)>
+<!ELEMENT culprit (#PCDATA)>
+<!ELEMENT explanation (#PCDATA)>
